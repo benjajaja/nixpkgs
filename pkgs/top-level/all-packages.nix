@@ -26512,6 +26512,8 @@ with pkgs;
     inherit (python3Packages) buildPythonApplication requests;
   };
 
+  dmitri = callPackage ../applications/misc/dmitri { };
+
   dmrconfig = callPackage ../applications/radio/dmrconfig { };
 
   dmtx-utils = callPackage ../tools/graphics/dmtx-utils {
